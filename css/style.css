@@ -17,6 +17,28 @@ clearfix {
 	background: #21242d url('https://cssauthor.com/wp-content/uploads/2018/06/Bouncy-Preloader.gif') no-repeat center;
 	z-index: 999;
 }
+#promptSize{ 
+    position: fixed;
+    display: none;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(243, 132, 57, 0.7);
+	z-index: 999;
+}
+#promptSize .prompt-box{ 
+    font-size: 24px;
+    padding:20px 5px;
+    margin-top: 20%;
+    max-width:600px;
+    border: black solid;
+}
+#promptSize .input-box{
+    text-align: center; 
+    font-size: 20px;
+    padding:20px 10px; 
+    min-width:200px;
+    border: black solid;
+}
 
 body {
     
@@ -92,13 +114,19 @@ hr{
 .box {  
     position: relative;  
     float: right;
-    width: 50%; 
-    height: 50%;        
-    background-color: rgba(0, 0, 0, 0.322);
-}
-.box:hover{ 
+    /* width: 50%; 
+    height: 50%;         */
     /* background-color: rgba(0, 0, 0, 0.322); */
-}  
+} 
+
+.button {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 30px;
+    color: orange;
+    /* border: white solid; */
+    background-color: white;
+}
 
 @media only screen and (max-width: 1350px) {
     aside {
