@@ -1,41 +1,21 @@
 
-
-var preloader = document.getElementById('loader')
- 
-
+// LOADER
+var preloader = document.getElementById('loader')  
 document.addEventListener("DOMContentLoaded", function() { 
     preloader.style.display = 'none'
 })
-
+//  
 var board = document.getElementById("board");
-console.log(board)
-
-
-board.addEventListener("mouseover", function(){ 
-    hover = true   
-}); 
-board.addEventListener("mouseout", function(){ 
-    hover = false  
-}); 
-
+console.log(board) 
 let hover = false
-let painting = false
-
-
-document.addEventListener('click', function (e) { 
-});
-
-
+let painting = false 
 document.addEventListener('keydown', function (e) {
     // console.log(e.key)
-    if(e.ctrlKey){
-        if(hover){  
-            painting = true
-            console.log(e.key , " is pressed")
-        }
+    if(e.ctrlKey){ 
+            painting = true 
+            console.log(e.key , " is pressed") 
     }
-});
-
+}); 
 
 document.addEventListener('keyup', function (e) { 
     if(painting){
@@ -45,33 +25,24 @@ document.addEventListener('keyup', function (e) {
 });
  
 board.onmouseover = function (e) {
-    if(painting){
-        e = e || window.event;
-        evt = e;
-        console.log(e.target)
-    }
+    hover = true   
+    console.log("hover - true") 
 } 
-
-function paint(painting){
-
-    console.log(painting)
+board.onmouseleave = function (e) {
+    hover = false
+    console.log("hover - false")
 }
-// function paintStart() {
-    // hover = true 
-    // console.log('paint :',paint)   
-    
-    // document.addEventListener('keydown', function (e) {
-    //     if(e.ctrlKey){
-    //         // paint = true
-    //         console.log('paint :',paint)  
-    //     }
-    // });
-    // document.addEventListener('keyup', function (e) {
-    //     // console.log(e.key) 
-    // });
-// } 
+document.onmousemove = function (e) {
+    e = e || window.event;
+    evt = e;
+    if(hover && painting){  
+        console.log(e.target.id)
+        paint(e.target.id)
+    } 
+}
+let color = "white";
 
-// document.onclick = function (e) {
-//     e = e || window.event; 
-//     console.log(e.target)
-// }
+function paint(boxId){
+    let box = document.getElementById(boxId)
+    box.setAttribute("style", `background-color:${color};`)
+}  

@@ -94,21 +94,11 @@ hr{
     float: right;
     width: 50%; 
     height: 50%;        
-    /* background-color: rgba(0, 0, 0, 0.322); */
-}
-.box:hover{ 
     background-color: rgba(0, 0, 0, 0.322);
 }
-#box1 { 
+.box:hover{ 
     /* background-color: rgba(0, 0, 0, 0.322); */
-}
-
-.panel {
-    background-color: lightcyan;
-    width: 80%;
-    height: 80%;
-}
-
+}  
 
 @media only screen and (max-width: 1350px) {
     aside {
