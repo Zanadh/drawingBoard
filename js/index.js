@@ -4,17 +4,14 @@ var preloader = document.getElementById('loader')
 var promptSize = document.getElementById('promptSize')  
 document.addEventListener("DOMContentLoaded", function() { 
     preloader.style.display = 'none'
-    // promptSize.style.display = 'initial' 
+    promptSize.style.display = 'initial' 
     createBoard() 
 }) 
 
 function resizeBoard(){ 
     promptSize.style.display = 'initial'   
 }
-
-function resetBoard(){ 
-    // promptSize.style.display = 'initial'   
-}
+ 
 
 //   
 
@@ -80,19 +77,16 @@ document.onmousemove = function (e) {
 
 let color = "#fe2e2e";
 function selectColor(colorCode){
-    console.log(colorCode)
+    var currentColor = document.getElementById("currentColor")
+    currentColor.style.backgroundColor= colorCode
+    console.log(colorCode) 
     color = colorCode
 
 }
 // var colorPanel = document.getElementsByClassName("panel")
 // console.log(colorPanel)
 
-
-colorPanel.onmouseover = function (e) {
-    console.log("asda")
-}
-
-
+ 
 function paint(boxId){
     // console.log(boxId)
     let box = document.getElementById(boxId)

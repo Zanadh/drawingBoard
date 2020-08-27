@@ -164,6 +164,13 @@ hr{
     background-color: white;
 }
 
+#currentColor {
+    width: 60%;
+    min-height:50px;
+    margin: 15px 10px;
+    border: solid white;
+}
+
 footer{
     position: fixed;
     bottom: 0;
@@ -186,6 +193,7 @@ footer{
     }
 
     .button {
+        white-space:nowrap;
         font-size: 18px;
         font-weight: bold;
         padding: 10px 30px;
