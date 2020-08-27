@@ -7,22 +7,23 @@
     <title>HacktiPaint - Phase 0 Final Project</title>
 </head>
 <body> 
-    <div id="loader"></div>
+    <div id="loader"></div> 
+    <div id="promptSize">
+        <center>
+            <form class="prompt-box rounded">
+                <h3>Please Input the board size :</h3><br>
+                <input id="fsize" class="input-box rounded" type="number" value="4" min="1" max="100" !required><br><br>
+                <a class="button rounded" onclick="getBoardSize()"  > Draw </a>
+            </form>
+        </center>
+    </div>
     <div class="container">
         <section class="rounded"> 
             <header>
                 <h1>DrawingBoard - Hacktiv8 Projects</h1> 
             </header>
             <hr>
-            <div id="board" class="content rounded-half">
-                <div class="box" id="box-1">  
-                </div> 
-                <div class="box" id="box-2"> 
-                </div> 
-                <div class="box" id="box-3"> 
-                </div> 
-                <div class="box" id="box-4"> 
-                </div> 
+            <div id="board" class="content rounded-half"> 
             </div> 
         </section>
         <aside class="rounded" id="color-switcher">
