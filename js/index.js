@@ -11,10 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function resizeBoard(){ 
     promptSize.style.display = 'initial'   
 }
- 
-
-//   
-
+  
 
 function setBoardSize(){
     var size = document.getElementById("fsize")
