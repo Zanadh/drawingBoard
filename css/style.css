@@ -1,0 +1,96 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+ 
+clearfix { 
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+#loader{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #21242d url('https://cssauthor.com/wp-content/uploads/2018/06/Bouncy-Preloader.gif') no-repeat center;
+	z-index: 999;
+}
+
+body {
+    
+    background-color: antiquewhite;
+}
+h1,h2,h3,h4,a,p {
+    font-family: 'Varela Round', sans-serif; 
+    color: white; 
+}
+.container { 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* padding: 10px 10px; */
+    margin: 3%; 
+    /* background-color: aliceblue; */
+    /* border: solid black; */
+}
+
+aside {
+    /* border: solid black; */
+    background-color: rgba(243, 132, 57, 0.808);
+    /* border-right: antiquewhite solid; */
+    position: relative; 
+    height: 100%;
+    width: 20%;
+    float: left; 
+}
+section {
+    /* border: solid black; */
+    clear: right;
+    background-color: rgb(209, 116, 73);
+    position: relative; 
+    height: 100%;
+    width: 79%;
+    float: right; 
+}
+header{
+    margin-top: 20px;
+    text-align: center; 
+} 
+hr{
+    height: 5px;
+    background-color: antiquewhite;
+}
+
+.rounded {
+    border-radius: 20px;
+}
+.rounded-half {
+    border-radius: 0 0 20px 20px;
+}
+.content{
+    position: relative ;
+    height: 79%;
+    width: 73%;
+    background-color: antiquewhite;
+    margin: 10px 10px;
+}
+.box { 
+    position: relative;  
+    width: 100%;
+    /* position */
+    /* height: 100%; */
+    background-color: rgba(0, 0, 0, 0.322);
+    /* border: black solid; */
+
+}
+
+
+@media only screen and (max-width: 566px) {
+    .do{ 
+     height: 900px;
+   }
+ }
