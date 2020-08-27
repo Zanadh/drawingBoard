@@ -77,19 +77,16 @@ document.onmousemove = function (e) {
 
 let color = "#fe2e2e";
 function selectColor(colorCode){
-    console.log(colorCode)
+    var currentColor = document.getElementById("currentColor")
+    currentColor.style.backgroundColor= colorCode
+    console.log(colorCode) 
     color = colorCode
 
 }
 // var colorPanel = document.getElementsByClassName("panel")
 // console.log(colorPanel)
 
-
-colorPanel.onmouseover = function (e) {
-    console.log("asda")
-}
-
-
+ 
 function paint(boxId){
     // console.log(boxId)
     let box = document.getElementById(boxId)
