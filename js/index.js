@@ -4,7 +4,7 @@ var preloader = document.getElementById('loader')
 var promptSize = document.getElementById('promptSize')  
 document.addEventListener("DOMContentLoaded", function() { 
     preloader.style.display = 'none'
-    promptSize.style.display = 'initial' 
+    // promptSize.style.display = 'initial' 
      
 }) 
 //   

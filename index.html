@@ -10,10 +10,10 @@
     <div id="loader"></div> 
     <div id="promptSize">
         <center>
-            <form class="prompt-box rounded">
+            <form action="#" class="prompt-box rounded">
                 <h3>Please Input the board size :</h3><br>
                 <input id="fsize" class="input-box rounded" type="number" value="4" min="1" max="100" !required><br><br>
-                <a class="button rounded" onclick="getBoardSize()"  > Draw </a>
+                <button class="button rounded" id="submit" onclick="getBoardSize()"  > Draw </button>
             </form>
         </center>
     </div>
@@ -26,14 +26,39 @@
             <div id="board" class="content rounded-half"> 
             </div> 
         </section>
-        <aside class="rounded" id="color-switcher">
-            <div class="panel rounded">
-                <header>
-                 <h1>Color - Switcher</h1>
-                 <br>
-                 <hr>
-                </header>
-            </div>
+        <aside class="rounded" id="color-switcher"> 
+            <header>
+                <h1>Color - Switcher</h1>
+                <br>
+                <hr>
+            </header>
+            <div class="color-panel">
+                <!-- <center>  -->
+                    <div class="panel" >
+                        <div class="colorBox" id="colorBox-1" style="background-color:#B71C1C;"></div>
+                        <div class="colorBox" id="colorBox-2" style="background-color:#4A148C"></div>
+                        <div class="colorBox" id="colorBox-3" style="background-color:#1A237E"></div>
+                        <div class="colorBox" id="colorBox-4" style="background-color:#0D47A1"></div>
+                        <div class="colorBox" id="colorBox-5" style="background-color:#039BE5"></div>
+                        <div class="colorBox" id="colorBox-6" style="background-color:#004D40"></div>
+                        <div class="colorBox" id="colorBox-7" style="background-color:#33691E"></div>
+                        <div class="colorBox" id="colorBox-8" style="background-color:#F57F17"></div>
+                        <div class="colorBox" id="colorBox-9" style="background-color:#FF6F00"></div>
+                        <div class="colorBox" id="colorBox-10" style="background-color:#E65100"></div>
+                        <div class="colorBox" id="colorBox-11" style="background-color:#BF360C"></div>
+                        <div class="colorBox" id="colorBox-12" style="background-color:#3E2723"></div>
+                        <div class="colorBox" id="colorBox-13" style="background-color:#212121"></div>
+                        <div class="colorBox" id="colorBox-14" style="background-color:#FFFFFF"></div>
+                        <div class="colorBox" id="colorBox-15" style="background-color:#E0E0E0"></div>
+                        <div class="colorBox" id="colorBox-16" style="background-color:#BDBDBD"></div>
+                        <div class="colorBox" id="colorBox-17" style="background-color:#616161"></div>
+                        <div class="colorBox" id="colorBox-18" style="background-color:#000000"></div>
+                    </div>
+                <!-- </center> -->
+            </div> 
+            <div class="color-action">
+                <!-- <div class="colorBox" ></div> -->
+            </div> 
         </aside>
     </div>
 
