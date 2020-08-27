@@ -5,14 +5,21 @@ var promptSize = document.getElementById('promptSize')
 document.addEventListener("DOMContentLoaded", function() { 
     preloader.style.display = 'none'
     // promptSize.style.display = 'initial' 
-    createBoard()
-     
+    createBoard() 
 }) 
+
+function resizeBoard(){ 
+    promptSize.style.display = 'initial'   
+}
+
+function resetBoard(){ 
+    // promptSize.style.display = 'initial'   
+}
 
 //   
 
 
-function getBoardSize(){
+function setBoardSize(){
     var size = document.getElementById("fsize")
     
     console.log(size.value) 
