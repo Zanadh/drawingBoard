@@ -5,9 +5,12 @@ var promptSize = document.getElementById('promptSize')
 document.addEventListener("DOMContentLoaded", function() { 
     preloader.style.display = 'none'
     // promptSize.style.display = 'initial' 
+    createBoard()
      
 }) 
+
 //   
+
 
 function getBoardSize(){
     var size = document.getElementById("fsize")
@@ -66,8 +69,22 @@ document.onmousemove = function (e) {
         paint(e.target.id)
     } 
 }
+// PICKING COLOR
 
 let color = "#fe2e2e";
+function selectColor(colorCode){
+    console.log(colorCode)
+    color = colorCode
+
+}
+// var colorPanel = document.getElementsByClassName("panel")
+// console.log(colorPanel)
+
+
+colorPanel.onmouseover = function (e) {
+    console.log("asda")
+}
+
 
 function paint(boxId){
     // console.log(boxId)
@@ -76,3 +93,5 @@ function paint(boxId){
     // box.setAttribute("style", `background-color:${color};`) 
     box.style.backgroundColor =color
 }  
+
+
