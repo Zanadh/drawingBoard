@@ -11,6 +11,15 @@ document.addEventListener("DOMContentLoaded", function() {
 function resizeBoard(){ 
     promptSize.style.display = 'initial'   
 }
+var colorPanel = document.getElementById('color-switcher')  
+
+function panelClose(){
+    colorPanel.style.display = 'none';
+
+}
+function panelOpen(){
+    colorPanel.style.display = 'initial'; 
+}
   
 
 function setBoardSize(){
